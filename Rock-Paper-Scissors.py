@@ -1,6 +1,6 @@
 import random
 
-# ASCII Art for choices
+
 rock = '''
     _______
 ---'   ____)
@@ -28,10 +28,10 @@ scissors = '''
 ---.__(___)
 '''
 
-# Choices list
+
 choices = [rock, paper, scissors]
 
-# Player input
+
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors:\n"))
 
 if user_choice < 0 or user_choice > 2:
@@ -40,12 +40,12 @@ else:
     print("\nYou chose:")
     print(choices[user_choice])
 
-    # Computer choice
+    
     computer_choice = random.randint(0, 2)
     print("Computer chose:")
     print(choices[computer_choice])
 
-    # Game logic
+    
     if user_choice == computer_choice:
         print("It's a draw!")
     elif (user_choice == 0 and computer_choice == 2) or \
